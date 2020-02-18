@@ -1,4 +1,4 @@
-package com.nalaolla.websocket;
+package com.nalaolla.websocket.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.nalaolla.websocket.model.ChatRoom;

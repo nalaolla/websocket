@@ -1,6 +1,6 @@
 package com.nalaolla.websocket.model;
 
-import com.nalaolla.websocket.ChatService;
+import com.nalaolla.websocket.service.ChatService;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;

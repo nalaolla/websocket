@@ -1,9 +1,8 @@
 package com.nalaolla.websocket.controller;
 
-import com.nalaolla.websocket.ChatService;
+import com.nalaolla.websocket.service.ChatService;
 import com.nalaolla.websocket.model.ChatRoom;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -13,7 +12,7 @@ import java.util.List;
 @RequestMapping("/chat")
 public class ChatController {
 
-    private ChatService chatService;
+    private final ChatService chatService;
 
     @PostMapping
     public ChatRoom createRoom(@RequestParam String roomName) {
